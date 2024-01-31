@@ -8,3 +8,10 @@ Attempt at recreating the game wordle. In which a user has 6 chances to guess a 
 ![Alt text](image2.png)
 
 ![Alt text](image.png)
+
+
+
+DEMO:
+
+
+![Alt text](demo.mp4)
