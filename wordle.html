@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wordle Game</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-dziRZL+WBEJMy6Wg41Mz5bNqB7JG4sU8xF9+rwlqJ6SBbOeZ1stwQaZM2A8pbk7D" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
         /* Add some additional styles as needed */
 
@@ -16,8 +18,7 @@
             max-width: 600px;
             margin: 20px auto;
             padding: 20px;
-            border-radius: 10px;
-            border-color: chartreuse;
+            position: relative;
         }
         #word-display {
             font-size: 24px;
@@ -39,10 +40,7 @@
             cursor: pointer;
             display: none;
         }
-        #grad {
-            background-image: linear-gradient(to right, rgba(128,0,128,0), rgba(128,0,128,1));
-            transition: background 2s;
-        }
+       
         hr {
             margin: 20px 0;
             border-color: yellow; 
@@ -53,6 +51,17 @@
         video {
             border: 5px solid transparent; /* Add a transparent border to the video */
             border-radius: 10px; /* Apply border-radius to match the game container */
+        }
+        .social-icons {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            margin: 10px;
+        }
+        .social-icons a {
+            margin-left: 10px;
+            color: #fdfdfd;
+            font-size: 28px;
         }
     </style>
 </head>
@@ -73,7 +82,13 @@
         <hr>
         <p>Turns Left: <span id="turns-left">6</span></p>
         <button id="play-again-button" onclick="playAgain()">Play Again</button>
+        
+        <div class="social-icons">
+            <a href="https://www.linkedin.com/in/gloria-mukendi-9838a4256?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><i class="fa fa-linkedin-square"></i></a>
+            <a href="https://github.com/glomuken" target="_blank"><i class="fa fa-github"></i></a>
+        </div>
     </div>
+
 
     <script>
         var wordList = ["Above", "Acute"]; // Add more words as needed
