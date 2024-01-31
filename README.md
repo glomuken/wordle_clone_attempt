@@ -9,5 +9,4 @@ Attempt at recreating the game wordle. In which a user has 6 chances to guess a 
 
 DEMO:
 
-
-![Alt text](demo.mp4)
+https://www.veed.io/view/83943daf-421c-4e12-b509-ab9cd0381e57?panel=share
